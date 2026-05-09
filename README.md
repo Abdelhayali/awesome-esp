@@ -1,12 +1,31 @@
 # Awesome ESP [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code-of-conduct.md)
-A curated list of awesome ESP8266/32 projects and code.
 
-<a href="http://espressif.com/en/products/hardware/esp8266ex/overview"><img src="img/esp8266.jpg" alt="ESP8266" align="left" style="margin-right: 25px" height=150></a>
-<a href="http://espressif.com/en/products/hardware/esp32/overview"><img src="https://pbs.twimg.com/profile_images/863510403120222208/rjVOiTe3.jpg" alt="ESP32" align="left" style="margin-right: 25px" height=150></a>
-> Both the [ESP8266](http://espressif.com/en/products/hardware/esp8266ex/overview) and the [ESP32](http://espressif.com/en/products/hardware/esp32/overview) are low-cost Wi-Fi microchips with full TCP/IP stack and microcontroller capabilities produced by the Shanghai-based manufacturer Espressif Systems.
-> <br/>
-> See [Contributing](contributing.md) for information on how to contribute to this list.
-> <br/><br/>
+A curated list of awesome projects, libraries, and tools for [Espressif](https://www.espressif.com/)'s ESP8266, ESP32, and the ESP32-S/C/H/P-series microcontrollers.
+
+<p align="center">
+  <img src="img/esp8266.jpg" alt="ESP family" height="170">
+</p>
+
+Espressif Systems ships one of the most popular families of low-cost wireless microcontrollers in the world. Since the original ESP8266 (2014) and ESP32 (2016), the lineup has grown to span two architectures (Xtensa LX6/LX7 and RISC-V) and a dozen distinct SoCs covering everything from sub-dollar Wi-Fi gadgets to MIPI-DSI HMI workhorses. See [contributing.md](contributing.md) for how to contribute to this list.
+
+**Chips at a glance:**
+
+- [ESP8266](https://www.espressif.com/en/products/socs/esp8266) (2014, Xtensa LX106, Wi-Fi 4) — The original; still produced, but not recommended for new designs.
+- [ESP32](https://www.espressif.com/en/products/socs/esp32) (2016, dual Xtensa LX6, Wi-Fi 4 + BT Classic + BLE 4.2) — The classic dual-core; backbone of most pre-2022 ESP32 projects.
+- [ESP32-S2](https://www.espressif.com/en/products/socs/esp32-s2) (2019, Xtensa LX7, Wi-Fi 4) — Native USB OTG and capacitive touch; no Bluetooth.
+- [ESP32-S3](https://www.espressif.com/en/products/socs/esp32-s3) (2020, dual Xtensa LX7, Wi-Fi 4 + BLE 5) — AI/ML vector instructions, USB OTG, lots of GPIO. The default for vision/audio.
+- [ESP32-C3](https://www.espressif.com/en/products/socs/esp32-c3) (2020, RISC-V, Wi-Fi 4 + BLE 5) — RISC-V drop-in replacement for ESP8266/ESP32 at modest cost.
+- [ESP32-C2 / ESP8684](https://www.espressif.com/en/products/socs/esp32-c2) (2022, RISC-V, Wi-Fi 4 + BLE 5) — Cost-down ESP8266 successor with in-package flash.
+- [ESP32-C6](https://www.espressif.com/en/products/socs/esp32-c6) (2023, RISC-V HP + LP, Wi-Fi 6 + BLE 5 + 802.15.4) — Espressif's recommended Matter target; Wi-Fi, Thread, and Zigbee on one die.
+- [ESP32-H2](https://www.espressif.com/en/products/socs/esp32-h2) (2023, RISC-V, BLE 5 + 802.15.4) — Pure Thread/Zigbee endpoint with no Wi-Fi; very low power.
+- [ESP32-P4](https://www.espressif.com/en/products/socs/esp32-p4) (2024, dual RISC-V HP + LP, no on-die radio) — MIPI-DSI/CSI, USB 2.0 HS, Ethernet, AI extensions — the HMI/display workhorse, paired with a C5/C6 companion for connectivity.
+- [ESP32-C61](https://www.espressif.com/en/products/socs/esp32-c61) (2024, RISC-V, Wi-Fi 6 + BLE 5) — Cost-reduced Wi-Fi 6 part; no 802.15.4 (key difference vs C6).
+- [ESP32-C5](https://www.espressif.com/en/products/socs/esp32-c5) (2025, RISC-V, dual-band 2.4 + 5 GHz Wi-Fi 6 + BLE 5 + 802.15.4) — First Espressif chip with 5 GHz Wi-Fi.
+
+Espressif positions **ESP32-C6** as the modern default for connected IoT, **ESP32-S3** for AI/USB/display work, **ESP32-P4** for HMI workloads, and **ESP32-C2/C3** as the cost-down replacements for ESP8266.
+
+**Tag legend:** Where chip support isn't obvious from the description, entries are tagged with the specific chip(s) they target — for example `` `ESP32-S3` `` `` `ESP32-P4` ``. **Untagged entries support the whole ESP family** (e.g. ESP-IDF, MicroPython, esptool).
+
 ---
 
 ## Contents
